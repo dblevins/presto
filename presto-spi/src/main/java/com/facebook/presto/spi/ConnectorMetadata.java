@@ -17,6 +17,16 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * The Connector itself represents a single Catalog.
+ *
+ * ConnectorMetadata provides the information about that catalog,
+ * specifically Schema, Table and Column metadata.
+ *
+ * Note, the actual Catalog name is defined outside the
+ * Connector entirely.  This allows the same connector to be
+ * installed several times with different configuration.
+ */
 public interface ConnectorMetadata
 {
     /**

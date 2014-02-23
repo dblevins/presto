@@ -30,6 +30,11 @@ import java.util.logging.Logger;
 import static com.google.common.base.Strings.isNullOrEmpty;
 import static java.lang.String.format;
 
+/**
+ * Example JDBC URL:
+ *
+ *  - jdbc:presto://localhost:8080/[catalog]/[schema]
+ */
 public class PrestoDriver
         implements Driver, Closeable
 {
